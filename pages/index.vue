@@ -55,6 +55,14 @@
           </div>
         </div>
       </div>
+      <div class="absolute z-10 px-2 mt-2 ">
+        <div class="overflow-hidden rounded ring-1 ring-black ring-opacity-5">
+          <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+            <a href="">简体中文</a>
+            <a href="">English</a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- #header -->
     <header class="bg-fixed bg-center bg-no-repeat bg-cover" id="header">
