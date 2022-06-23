@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="absolute z-10 px-2 mt-2 ">
+      <div class="absolute z-10 px-2 mt-2">
         <div class="overflow-hidden rounded ring-1 ring-black ring-opacity-5">
           <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
             <a href="">简体中文</a>
@@ -133,155 +133,161 @@
     <main class="">
       <!-- #product -->
       <div class="px-2">
-      <div
-        class="container flex flex-col items-center p-8 mx-auto mb-24 border-0 border-none shadow-lg bg-slate-100 rounded-3xl"
-        id="company-product"
-      >
-        <h2 class="text-3xl tracking-widest text-slate-900">公司产品</h2>
-        <h4 class="text-slate-400">Company Product</h4>
-        <div></div>
-        <div class="flex">
-          <div
-            class="w-2/3 mt-8 mr-2 bg-center bg-no-repeat bg-cover border-0 border-none bg-clip-border rounded-3xl"
-            id="company-product-main"
-          ></div>
+        <div
+          class="container flex flex-col items-center p-8 mx-auto mb-24 border-0 border-none shadow-lg bg-slate-100 rounded-3xl"
+          id="company-product"
+        >
+          <h2 class="text-3xl tracking-widest text-slate-900">公司产品</h2>
+          <h4 class="text-slate-400">Company Product</h4>
+          <div></div>
+          <div class="flex">
+            <div
+              class="w-2/3 mt-8 mr-2 bg-center bg-no-repeat bg-cover border-0 border-none bg-clip-border rounded-3xl"
+              id="company-product-main"
+            ></div>
 
-          <div class="">
-            <div class="grid grid-cols-3 gap-2">
-              <div class="flex flex-col items-center p-2">
-                <div class="p-6">
-                  <img
-                    src="~/assets/img/043-2.jpg"
-                    alt="joycare-product-1"
-                    class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
-                  />
+            <div class="">
+              <div class="grid grid-cols-3 gap-2">
+                <div class="flex flex-col items-center p-2">
+                  <div class="p-6">
+                    <img
+                      src="~/assets/img/043-2.jpg"
+                      alt="joycare-product-1"
+                      class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
+                    />
+                  </div>
+
+                  <h4 class="mb-2 text-lg font-medium text-slate-900">
+                    牙膏漱口水
+                  </h4>
+                  <p class="mb-2 text-sm text-slate-400">
+                    Health begins with oral cavity and ends with choice of
+                    JOYCARE
+                  </p>
+                  <button
+                    class="px-4 py-1 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-400"
+                  >
+                    更多产品
+                  </button>
                 </div>
+                <div class="flex flex-col items-center p-2">
+                  <div class="p-6">
+                    <img
+                      src="~/assets/img/705-1.jpg"
+                      alt="joycare-product-1"
+                      class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
+                    />
+                  </div>
 
-                <h4 class="mb-2 text-lg font-medium text-slate-900">
-                  牙膏漱口水
-                </h4>
-                <p class="mb-2 text-sm text-slate-400">
-                  Health begins with oral cavity and ends with choice of JOYCARE
-                </p>
-                <button
-                  class="px-4 py-1 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-400"
-                >
-                  更多产品
-                </button>
+                  <h4 class="mb-2 text-lg font-medium text-slate-900">
+                    牙膏漱口水
+                  </h4>
+                  <p class="mb-2 text-sm text-slate-400">
+                    Health begins with oral cavity and ends with choice of
+                    JOYCARE
+                  </p>
+                  <button
+                    class="px-4 py-1 text-sm font-medium text-white bg-red-500 rounded hover:bg-red-400"
+                  >
+                    更多产品
+                  </button>
+                </div>
+                <div class="flex flex-col items-center p-2">
+                  <div class="p-6">
+                    <img
+                      src="~/assets/img/043-2.jpg"
+                      alt="joycare-product-1"
+                      class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
+                    />
+                  </div>
+
+                  <h4 class="mb-2 text-lg font-medium text-slate-900">
+                    牙膏漱口水
+                  </h4>
+                  <p class="mb-2 text-sm text-slate-400">
+                    Health begins with oral cavity and ends with choice of
+                    JOYCARE
+                  </p>
+                  <button
+                    class="px-4 py-1 text-sm font-medium text-white rounded bg-lime-500 hover:bg-lime-400"
+                  >
+                    更多产品
+                  </button>
+                </div>
               </div>
-              <div class="flex flex-col items-center p-2">
-                <div class="p-6">
-                  <img
-                    src="~/assets/img/705-1.jpg"
-                    alt="joycare-product-1"
-                    class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
-                  />
-                </div>
+              <div class="grid grid-cols-3 gap-2">
+                <div class="flex flex-col items-center p-2">
+                  <div class="p-6">
+                    <img
+                      src="~/assets/img/043-2.jpg"
+                      alt="joycare-product-1"
+                      class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
+                    />
+                  </div>
 
-                <h4 class="mb-2 text-lg font-medium text-slate-900">
-                  牙膏漱口水
-                </h4>
-                <p class="mb-2 text-sm text-slate-400">
-                  Health begins with oral cavity and ends with choice of JOYCARE
-                </p>
-                <button
-                  class="px-4 py-1 text-sm font-medium text-white bg-red-500 rounded hover:bg-red-400"
-                >
-                  更多产品
-                </button>
-              </div>
-              <div class="flex flex-col items-center p-2">
-                <div class="p-6">
-                  <img
-                    src="~/assets/img/043-2.jpg"
-                    alt="joycare-product-1"
-                    class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
-                  />
+                  <h4 class="mb-2 text-lg font-medium text-slate-900">
+                    牙膏漱口水
+                  </h4>
+                  <p class="mb-2 text-sm text-slate-400">
+                    Health begins with oral cavity and ends with choice of
+                    JOYCARE
+                  </p>
+                  <button
+                    class="px-4 py-1 text-sm font-medium text-white bg-orange-500 rounded hover:bg-orange-400"
+                  >
+                    更多产品
+                  </button>
                 </div>
+                <div class="flex flex-col items-center p-2">
+                  <div class="p-6">
+                    <img
+                      src="~/assets/img/705-1.jpg"
+                      alt="joycare-product-1"
+                      class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
+                    />
+                  </div>
 
-                <h4 class="mb-2 text-lg font-medium text-slate-900">
-                  牙膏漱口水
-                </h4>
-                <p class="mb-2 text-sm text-slate-400">
-                  Health begins with oral cavity and ends with choice of JOYCARE
-                </p>
-                <button
-                  class="px-4 py-1 text-sm font-medium text-white rounded bg-lime-500 hover:bg-lime-400"
-                >
-                  更多产品
-                </button>
-              </div>
-            </div>
-            <div class="grid grid-cols-3 gap-2">
-              <div class="flex flex-col items-center p-2">
-                <div class="p-6">
-                  <img
-                    src="~/assets/img/043-2.jpg"
-                    alt="joycare-product-1"
-                    class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
-                  />
+                  <h4 class="mb-2 text-lg font-medium text-slate-900">
+                    牙膏漱口水
+                  </h4>
+                  <p class="mb-2 text-sm text-slate-400">
+                    Health begins with oral cavity and ends with choice of
+                    JOYCARE
+                  </p>
+                  <button
+                    class="px-4 py-1 text-sm font-medium text-white rounded bg-cyan-500 hover:bg-cyan-400"
+                  >
+                    更多产品
+                  </button>
                 </div>
+                <div class="flex flex-col items-center p-2">
+                  <div class="p-6">
+                    <img
+                      src="~/assets/img/043-2.jpg"
+                      alt="joycare-product-1"
+                      class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
+                    />
+                  </div>
 
-                <h4 class="mb-2 text-lg font-medium text-slate-900">
-                  牙膏漱口水
-                </h4>
-                <p class="mb-2 text-sm text-slate-400">
-                  Health begins with oral cavity and ends with choice of JOYCARE
-                </p>
-                <button
-                  class="px-4 py-1 text-sm font-medium text-white bg-orange-500 rounded hover:bg-orange-400"
-                >
-                  更多产品
-                </button>
-              </div>
-              <div class="flex flex-col items-center p-2">
-                <div class="p-6">
-                  <img
-                    src="~/assets/img/705-1.jpg"
-                    alt="joycare-product-1"
-                    class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
-                  />
+                  <h4 class="mb-2 text-lg font-medium text-slate-900">
+                    牙膏漱口水
+                  </h4>
+                  <p class="mb-2 text-sm text-slate-400">
+                    Health begins with oral cavity and ends with choice of
+                    JOYCARE
+                  </p>
+                  <button
+                    class="px-4 py-1 text-sm font-medium text-white rounded bg-violet-500 hover:bg-violet-400"
+                  >
+                    更多产品
+                  </button>
                 </div>
-
-                <h4 class="mb-2 text-lg font-medium text-slate-900">
-                  牙膏漱口水
-                </h4>
-                <p class="mb-2 text-sm text-slate-400">
-                  Health begins with oral cavity and ends with choice of JOYCARE
-                </p>
-                <button
-                  class="px-4 py-1 text-sm font-medium text-white rounded bg-cyan-500 hover:bg-cyan-400"
-                >
-                  更多产品
-                </button>
-              </div>
-              <div class="flex flex-col items-center p-2">
-                <div class="p-6">
-                  <img
-                    src="~/assets/img/043-2.jpg"
-                    alt="joycare-product-1"
-                    class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
-                  />
-                </div>
-
-                <h4 class="mb-2 text-lg font-medium text-slate-900">
-                  牙膏漱口水
-                </h4>
-                <p class="mb-2 text-sm text-slate-400">
-                  Health begins with oral cavity and ends with choice of JOYCARE
-                </p>
-                <button
-                  class="px-4 py-1 text-sm font-medium text-white rounded bg-violet-500 hover:bg-violet-400"
-                >
-                  更多产品
-                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      
+
       <!-- #promo1 -->
       <div class="container flex flex-col items-center px-2 mx-auto">
         <h4 class="mb-4 font-semibold text-slate-900">
@@ -303,7 +309,9 @@
 
       <!-- #promo2 -->
       <div class="bg-slate-100">
-        <div class="container flex items-center justify-center px-2 py-24 mx-auto">
+        <div
+          class="container flex items-center justify-center px-2 py-24 mx-auto"
+        >
           <div class="w-1/3 mr-10">
             <img src="~/assets/img/7.jpg" alt="promo2" />
           </div>
@@ -325,7 +333,9 @@
 
       <!-- #promo3 -->
       <div class="">
-        <div class="container flex items-center justify-center px-2 py-24 mx-auto">
+        <div
+          class="container flex items-center justify-center px-2 py-24 mx-auto"
+        >
           <div class="mr-10">
             <h3 class="mb-4 text-3xl tracking-widest text-slate-900">
               口腔由洁彩护航，健康与快乐同行
@@ -391,6 +401,7 @@
       <div
         class="bg-center bg-no-repeat bg-cover bg-slate-50 py-14 mb-14"
         id="promo5"
+        style="background-image: url(https://assets.yzjoycare.com/img/15.webp)"
       >
         <div class="container flex justify-between px-2 mx-auto">
           <div class="text-4xl text-white">
@@ -411,7 +422,9 @@
           <h2 class="text-3xl tracking-widest text-slate-900">企业动态</h2>
           <h4 class="mb-14 text-slate-400">Company News</h4>
           <div class="flex flex-col px-2 mb-14">
-            <div class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row">
+            <div
+              class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row"
+            >
               <div class="flex-none">
                 <span class="text-xl font-semibold text-blue-500"
                   >2022-06-23</span
@@ -431,7 +444,9 @@
                 <img src="~/assets/img/16.jpg" alt="article-placeholder" />
               </div>
             </div>
-            <div class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row">
+            <div
+              class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row"
+            >
               <div class="flex-none">
                 <span class="text-xl font-semibold text-blue-500"
                   >2022-06-23</span
@@ -451,7 +466,9 @@
                 <img src="~/assets/img/16.jpg" alt="article-placeholder" />
               </div>
             </div>
-            <div class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row">
+            <div
+              class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row"
+            >
               <div class="flex-none">
                 <span class="text-xl font-semibold text-blue-500"
                   >2022-06-23</span
@@ -485,10 +502,12 @@
         class="pt-32 pb-64 bg-center bg-no-repeat bg-cover bg-slate-50"
         id="foot"
       >
-        <div class="container flex flex-col items-center justify-between px-2 mx-auto lg:flex-row">
+        <div
+          class="container flex flex-col items-center justify-between px-2 mx-auto lg:flex-row"
+        >
           <div class="mb-8 lg:mb-0">
             <img
-              src="~/assets/img/logo.png"
+              src="https://assets.yzjoycare.com/img/logo-1.webp"
               alt="color-logo"
               class="mb-8 w-96"
             />
@@ -578,11 +597,12 @@
           </div>
           <div class="w-3/4 p-8 bg-white rounded lg:w-1/3">
             <div class="mb-4">
-              <label for="customer-name" class="block text-sm font-medium text-slate-700"
+              <label
+                for="customer-name"
+                class="block text-sm font-medium text-slate-700"
                 >称谓</label
               >
               <div class="relative mt-1 rounded-md shadow-sm">
-                
                 <input
                   type="text"
                   name="customer-name"
@@ -593,11 +613,12 @@
               </div>
             </div>
             <div class="mb-4">
-              <label for="customer-email" class="block text-sm font-medium text-slate-700"
+              <label
+                for="customer-email"
+                class="block text-sm font-medium text-slate-700"
                 >邮箱</label
               >
               <div class="relative mt-1 rounded-md shadow-sm">
-                
                 <input
                   type="text"
                   name="customer-email"
@@ -608,11 +629,12 @@
               </div>
             </div>
             <div class="mb-4">
-              <label for="customer-phone" class="block text-sm font-medium text-slate-700"
+              <label
+                for="customer-phone"
+                class="block text-sm font-medium text-slate-700"
                 >联系电话</label
               >
               <div class="relative mt-1 rounded-md shadow-sm">
-                
                 <input
                   type="text"
                   name="customer-phone"
@@ -623,31 +645,41 @@
               </div>
             </div>
             <div class="mb-4">
-              <label for="customer-message" class="block text-sm font-medium text-slate-700"
+              <label
+                for="customer-message"
+                class="block text-sm font-medium text-slate-700"
                 >信息内容</label
               >
               <div class="relative mt-1 rounded-md shadow-sm">
-                
-                <textarea id="customer-message" name="customer-message" rows="3" class="block w-full py-2 pr-12 mt-1 border border-gray-300 rounded-md shadow-sm pl-7 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="如：和我们打个招呼吧~"></textarea>
+                <textarea
+                  id="customer-message"
+                  name="customer-message"
+                  rows="3"
+                  class="block w-full py-2 pr-12 mt-1 border border-gray-300 rounded-md shadow-sm pl-7 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  placeholder="如：和我们打个招呼吧~"
+                ></textarea>
               </div>
             </div>
             <button
-                          class="px-4 py-1 font-medium text-white bg-blue-500 border-2 border-blue-500 rounded mb-14 hover:bg-blue-400 hover:border-blue-400"
-
-            >提 交</button>
+              class="px-4 py-1 font-medium text-white bg-blue-500 border-2 border-blue-500 rounded mb-14 hover:bg-blue-400 hover:border-blue-400"
+            >
+              提 交
+            </button>
           </div>
         </div>
       </div>
-      </main>
-      <!-- #bottom -->
-      <footer class="py-6 bg-slate-900">
-        <div class="container mx-auto">
-          <p class="text-center text-white">
-            Copyright © 2022 扬州洁彩口腔护理用品有限公司. 苏ICP备14052651号-1
-          </p>
-        </div>
-      </footer>
-    
+    </main>
+    <!-- #bottom -->
+    <footer class="py-6 bg-slate-900">
+      <div class="container mx-auto">
+        <p class="text-center text-white">
+          Copyright © 2022 扬州洁彩口腔护理用品有限公司.
+          <a href="http://beian.miit.gov.cn/" class="hover:underline"
+            >苏ICP备2022024528号-1</a
+          >
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
