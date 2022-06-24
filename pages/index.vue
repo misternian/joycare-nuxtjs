@@ -55,14 +55,14 @@
           </div>
         </div>
       </div>
-      <div class="absolute z-10 px-2 mt-2">
+      <!-- <div class="absolute z-10 px-2 mt-2">
         <div class="overflow-hidden rounded ring-1 ring-black ring-opacity-5">
           <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
             <a href="">简体中文</a>
             <a href="">English</a>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- #header -->
     <header class="bg-fixed bg-center bg-no-repeat bg-cover" id="header">
@@ -70,7 +70,7 @@
         <div class="flex items-center justify-between">
           <div class="flex items-center">
             <img
-              src="~/assets/img/logo-white-h50px-2.png"
+              src="https://assets.yzjoycare.com/img/logo-2-h70.webp"
               alt="joycare-main-logo"
             />
             <h3 class="text-xl font-semibold text-white">
@@ -151,7 +151,7 @@
                 <div class="flex flex-col items-center p-2">
                   <div class="p-6">
                     <img
-                      src="~/assets/img/043-2.jpg"
+                      src="https://assets.yzjoycare.com/img/043-2.webp"
                       alt="joycare-product-1"
                       class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
                     />
@@ -173,7 +173,7 @@
                 <div class="flex flex-col items-center p-2">
                   <div class="p-6">
                     <img
-                      src="~/assets/img/705-1.jpg"
+                      src="https://assets.yzjoycare.com/img/705-1.webp"
                       alt="joycare-product-1"
                       class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
                     />
@@ -195,7 +195,7 @@
                 <div class="flex flex-col items-center p-2">
                   <div class="p-6">
                     <img
-                      src="~/assets/img/043-2.jpg"
+                      src="https://assets.yzjoycare.com/img/043-2.webp"
                       alt="joycare-product-1"
                       class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
                     />
@@ -219,7 +219,7 @@
                 <div class="flex flex-col items-center p-2">
                   <div class="p-6">
                     <img
-                      src="~/assets/img/043-2.jpg"
+                      src="https://assets.yzjoycare.com/img/043-2.webp"
                       alt="joycare-product-1"
                       class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
                     />
@@ -241,7 +241,7 @@
                 <div class="flex flex-col items-center p-2">
                   <div class="p-6">
                     <img
-                      src="~/assets/img/705-1.jpg"
+                      src="https://assets.yzjoycare.com/img/705-1.webp"
                       alt="joycare-product-1"
                       class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
                     />
@@ -263,7 +263,7 @@
                 <div class="flex flex-col items-center p-2">
                   <div class="p-6">
                     <img
-                      src="~/assets/img/043-2.jpg"
+                      src="https://assets.yzjoycare.com/img/043-2.webp"
                       alt="joycare-product-1"
                       class="mb-2 border-0 border-none bg-clip-border rounded-3xl"
                     />
@@ -304,7 +304,7 @@
         >
           了解更多
         </button>
-        <img src="~/assets/img/1.png" alt="promo1" class="mb-4" />
+        <img src="https://assets.yzjoycare.com/img/1.webp" alt="promo1" class="mb-4" />
       </div>
 
       <!-- #promo2 -->
@@ -313,7 +313,7 @@
           class="container flex items-center justify-center px-2 py-24 mx-auto"
         >
           <div class="w-1/3 mr-10">
-            <img src="~/assets/img/7.jpg" alt="promo2" />
+            <img src="https://assets.yzjoycare.com/img/7.webp" alt="promo2" />
           </div>
           <div>
             <h3 class="mb-4 text-3xl tracking-widest text-slate-900">
@@ -350,7 +350,7 @@
             </button>
           </div>
           <div class="w-1/3">
-            <img src="~/assets/img/6.jpg" alt="promo3" />
+            <img src="https://assets.yzjoycare.com/img/6.webp" alt="promo3" />
           </div>
         </div>
       </div>
