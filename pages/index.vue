@@ -1,10 +1,10 @@
 <template>
   <div>
     <!-- #topbar -->
-    <div class="px-2 py-2 bg-slate-900" id="top-bar">
-      <div class="container mx-auto">
+    <div class="bg-slate-900" id="top-bar">
+      <div class="container mx-auto relative">
         <div
-          class="flex justify-end px-2 text-sm md:justify-between"
+          class="flex justify-end px-2 text-sm md:justify-between items-center"
           id="top-bar-text"
         >
           <div class="hidden md:flex">
@@ -34,7 +34,10 @@
             </svg>
             <div class="ml-1 text-white">+86 13952746510</div>
           </div>
-          <div class="flex">
+          <div
+            class="flex p-2"
+            v-bind:class="{ 'bg-slate-800': choose_language }"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-5 h-5 text-white"
@@ -50,30 +53,32 @@
               />
             </svg>
             <div class="ml-1">
-              <a href="" class="text-white">CHOOSE LANGUAGE</a>
+              <a href="#" class="text-white" @click="chooseLanguage"
+                >CHOOSE LANGUAGE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="absolute right-2" v-if="choose_language">
+          <div class="overflow-hidden z-10">
+            <div class="relative grid gap-4 bg-slate-800 p-4">
+              <a href="#" class="text-white">简体中文</a>
+              <a href="#" class="text-white">English</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div class="absolute z-10 px-2 mt-2">
-        <div class="overflow-hidden rounded ring-1 ring-black ring-opacity-5">
-          <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
-            <a href="">简体中文</a>
-            <a href="">English</a>
-          </div>
-        </div>
-      </div> -->
     </div>
     <!-- #header -->
     <header class="bg-fixed bg-center bg-no-repeat bg-cover" id="header">
       <div class="container pt-6 mx-auto">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center">
+        <div class="flex items-center justify-between px-2">
+          <div class="flex items-center flex-col md:flex-row">
             <img
               src="https://assets.yzjoycare.com/img/logo-2-h70.webp"
               alt="joycare-main-logo"
             />
-            <h3 class="text-xl font-semibold text-white">
+            <h3 class="md:text-xl font-semibold text-white">
               扬州洁彩口腔护理用品有限公司
             </h3>
           </div>
@@ -111,10 +116,28 @@
               </li>
             </ul>
           </nav>
+          <div class="lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </div>
         </div>
       </div>
       <div class="flex flex-col items-center" id="header-promo">
-        <h1 class="mb-12 text-5xl text-white">健康从口腔开始，从洁彩结束</h1>
+        <h1 class="mb-12 text-3xl md:text-5xl text-white">
+          健康从口腔开始，从洁彩结束
+        </h1>
         <div class="block max-w-xs">
           <button
             class="px-4 py-2 mr-8 font-medium text-white bg-blue-500 border-2 border-blue-500 rounded hover:bg-blue-400 hover:border-blue-400"
@@ -304,7 +327,11 @@
         >
           了解更多
         </button>
-        <img src="https://assets.yzjoycare.com/img/1.webp" alt="promo1" class="mb-4" />
+        <img
+          src="https://assets.yzjoycare.com/img/1.webp"
+          alt="promo1"
+          class="mb-4"
+        />
       </div>
 
       <!-- #promo2 -->
@@ -686,5 +713,15 @@
 <script>
 export default {
   name: "IndexPage",
+  data() {
+    return {
+      choose_language: false,
+    };
+  },
+  methods: {
+    chooseLanguage() {
+      this.choose_language = !this.choose_language;
+    },
+  },
 };
 </script>
