@@ -71,7 +71,7 @@
     </div>
     <!-- #header -->
     <header class="bg-fixed bg-center bg-no-repeat bg-cover" id="header">
-      <div class="container pt-6 mx-auto">
+      <div class="container pt-6 mx-auto relative">
         <div class="flex items-center justify-between px-2">
           <div class="flex items-center flex-col md:flex-row">
             <img
@@ -117,25 +117,57 @@
             </ul>
           </nav>
           <div class="lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+            <button @click="showMenu" v-bind:class="{ hidden: show_menu }">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="absolute right-0 top-0" v-if="show_menu">
+          <div
+            class="flex flex-col z-10 w-32 h-screen bg-slate-800 p-4 opacity-90"
+          >
+            <div class="mb-6">
+              <button @click="showMenu" class="float-right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ul>
+              <li class="mb-4"><a href="" class="text-white">首页</a></li>
+              <li class="mb-4"><a href="" class="text-white">公司产品</a></li>
+              <li class="mb-4"><a href="" class="text-white">公司动态</a></li>
+              <li class="mb-4"><a href="" class="text-white">关于我们</a></li>
+              <li class="mb-4"><a href="" class="text-white">售后服务</a></li>
+              <li class="mb-4"><a href="" class="text-white">联系我们</a></li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="flex flex-col items-center" id="header-promo">
-        <h1 class="mb-12 text-3xl md:text-5xl text-white">
+        <h1 class="mb-12 text-2xl md:text-5xl text-white">
           健康从口腔开始，从洁彩结束
         </h1>
         <div class="block max-w-xs">
@@ -165,7 +197,7 @@
           <div></div>
           <div class="flex">
             <div
-              class="w-2/3 mt-8 mr-2 bg-center bg-no-repeat bg-cover border-0 border-none bg-clip-border rounded-3xl"
+              class="hidden lg:block md:w-2/3 mt-8 mr-2 bg-center bg-no-repeat bg-cover border-0 border-none bg-clip-border rounded-3xl"
               id="company-product-main"
             ></div>
 
@@ -313,13 +345,13 @@
 
       <!-- #promo1 -->
       <div class="container flex flex-col items-center px-2 mx-auto">
-        <h4 class="mb-4 font-semibold text-slate-900">
+        <h4 class="mb-4 font-semibold text-slate-900 text-xs md:text-base">
           YANGZHOU JOYCARE DENTAL PRODUCTS CO., LTD
         </h4>
-        <h3 class="mb-4 text-3xl tracking-widest text-slate-900">
+        <h3 class="mb-4 text-xl md:text-3xl tracking-widest text-slate-900">
           口腔由洁彩护航，健康与快乐同行
         </h3>
-        <h4 class="mb-4 text-slate-500">
+        <h4 class="mb-4 text-slate-500 text-xs md:text-base">
           Oral escort by JOYCARE, health and happiness together
         </h4>
         <button
@@ -331,22 +363,25 @@
           src="https://assets.yzjoycare.com/img/1.webp"
           alt="promo1"
           class="mb-4"
+          data-aos="fade-up"
         />
       </div>
 
       <!-- #promo2 -->
       <div class="bg-slate-100">
         <div
-          class="container flex items-center justify-center px-2 py-24 mx-auto"
+          class="container flex flex-col md:flex-row items-center justify-center px-2 py-24 mx-auto"
         >
-          <div class="w-1/3 mr-10" data-aos="fade-right">
+          <div class="md:w-1/3 md:mr-10 mb-6 md:mb-0" data-aos="fade-right">
             <img src="https://assets.yzjoycare.com/img/7.webp" alt="promo2" />
           </div>
-          <div>
-            <h3 class="mb-4 text-3xl tracking-widest text-slate-900">
+          <div class="flex flex-col items-center md:items-start">
+            <h3
+              class="mb-4 text-xl md:text-2xl lg:text-3xl tracking-widest text-slate-900"
+            >
               健康从口腔开始，选择到洁彩结束
             </h3>
-            <h4 class="mb-4 text-slate-500">
+            <h4 class="mb-4 text-slate-500 text-xs md:text-base">
               Health begins with oral cavity and ends with choice of JOYCARE
             </h4>
             <button
@@ -361,10 +396,14 @@
       <!-- #promo3 -->
       <div class="">
         <div
-          class="container flex items-center justify-center px-2 py-24 mx-auto"
+          class="container flex flex-col md:flex-row items-center justify-center px-2 py-24 mx-auto"
         >
-          <div class="mr-10">
-            <h3 class="mb-4 text-3xl tracking-widest text-slate-900">
+          <div
+            class="md:mr-10 mb-6 md:mb-0 flex flex-col items-center md:items-start"
+          >
+            <h3
+              class="mb-4 text-xl md:text-2xl lg:text-3xl tracking-widest text-slate-900"
+            >
               口腔由洁彩护航，健康与快乐同行
             </h3>
             <h4 class="mb-4 text-slate-500">
@@ -376,7 +415,7 @@
               了解更多
             </button>
           </div>
-          <div class="w-1/3" data-aos="fade-left">
+          <div class="md:w-1/3" data-aos="fade-left">
             <img src="https://assets.yzjoycare.com/img/6.webp" alt="promo3" />
           </div>
         </div>
@@ -384,9 +423,24 @@
 
       <!-- #promo4 -->
       <div class="grid grid-cols-3 h-96 bg-slate-50 mb-14">
-        <div class="bg-center bg-cover" style="" id="promo4-1"></div>
-        <div class="bg-center bg-cover" style="" id="promo4-2"></div>
-        <div class="bg-center bg-cover" style="" id="promo4-3"></div>
+        <div
+          class="bg-center bg-cover"
+          style=""
+          id="promo4-1"
+          data-aos="fade-up"
+        ></div>
+        <div
+          class="bg-center bg-cover"
+          style=""
+          id="promo4-2"
+          data-aos="fade-up"
+        ></div>
+        <div
+          class="bg-center bg-cover"
+          style=""
+          id="promo4-3"
+          data-aos="fade-up"
+        ></div>
       </div>
 
       <!-- #about-us -->
@@ -394,8 +448,8 @@
         <div class="container flex flex-col items-center px-2 mx-auto">
           <h2 class="text-3xl tracking-widest text-slate-900">关于我们</h2>
           <h4 class="mb-14 text-slate-400">About Our Company</h4>
-          <div class="flex flex-col md:flex-row">
-            <div class="md:w-1/2 mb-7 md:mb-0">
+          <div class="flex flex-col lg:flex-row">
+            <div class="lg:w-1/2 mb-7 lg:mb-0 md:px-10 px-4">
               <p class="mb-2 text-slate-900">
                 Yangzhou Joycare Dental Products Co.,
                 Ltd位于美丽的江苏扬州，一个以生产各种牙刷而闻名的城市。
@@ -414,11 +468,14 @@
                 Dental高品质和有价格竞争力的产品，在为您服务的同时，将“诚信、创新、质量和效率”置于高位。欢迎产品代理和贸易公司与我们联系，相信您能与我们建立长久而优秀的业务合作！
               </p>
             </div>
-            <div class="mx-auto">
-              <img
-                src="~/assets/img/video-placeholder-w360-h203.jpg"
-                alt="video-placeholder-w360-h203"
-              />
+
+            <div class="mx-auto" data-aos="fade-left">
+              <video controls width="480">
+                <source
+                  src="https://assets.yzjoycare.com/video/joycare_factory_video_1_480.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </div>
         </div>
@@ -429,14 +486,15 @@
         class="bg-center bg-no-repeat bg-cover bg-slate-50 py-14 mb-14"
         id="promo5"
         style="background-image: url(https://assets.yzjoycare.com/img/15.webp)"
+        data-aos="fade-up"
       >
         <div class="container flex justify-between px-2 mx-auto">
-          <div class="text-4xl text-white">
+          <div class="text-xl md:text-4xl text-white">
             <span class="font-semibold">Join us.</span>It will only take a
             minute.
           </div>
           <button
-            class="px-4 py-2 font-medium text-white border-2 border-white rounded hover:bg-blue-400 hover:border-blue-400"
+            class="px-2 md:px-4 py-2 font-medium text-white border-2 border-white rounded hover:bg-blue-400 hover:border-blue-400"
           >
             联系我们
           </button>
@@ -467,7 +525,7 @@
                   此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
                 </p>
               </div>
-              <div class="flex-initial w-64">
+              <div class="flex-initial w-64" data-aos="fade-left">
                 <img src="~/assets/img/16.jpg" alt="article-placeholder" />
               </div>
             </div>
@@ -489,7 +547,7 @@
                   此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
                 </p>
               </div>
-              <div class="flex-initial w-64">
+              <div class="flex-initial w-64" data-aos="fade-left">
                 <img src="~/assets/img/16.jpg" alt="article-placeholder" />
               </div>
             </div>
@@ -511,7 +569,7 @@
                   此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
                 </p>
               </div>
-              <div class="flex-initial w-64">
+              <div class="flex-initial w-64" data-aos="fade-left">
                 <img src="~/assets/img/16.jpg" alt="article-placeholder" />
               </div>
             </div>
@@ -622,7 +680,7 @@
               >
             </div>
           </div>
-          <div class="w-3/4 p-8 bg-white rounded lg:w-1/3">
+          <div class="w-4/5 md:w-3/4 p-4 md:p-8 bg-white rounded lg:w-1/3">
             <div class="mb-4">
               <label
                 for="customer-name"
@@ -719,11 +777,15 @@ export default {
   data() {
     return {
       choose_language: false,
+      show_menu: false,
     };
   },
   methods: {
     chooseLanguage() {
       this.choose_language = !this.choose_language;
+    },
+    showMenu() {
+      this.show_menu = !this.show_menu;
     },
   },
 };
