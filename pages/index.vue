@@ -339,7 +339,7 @@
         <div
           class="container flex items-center justify-center px-2 py-24 mx-auto"
         >
-          <div class="w-1/3 mr-10">
+          <div class="w-1/3 mr-10" data-aos="fade-right">
             <img src="https://assets.yzjoycare.com/img/7.webp" alt="promo2" />
           </div>
           <div>
@@ -376,7 +376,7 @@
               了解更多
             </button>
           </div>
-          <div class="w-1/3">
+          <div class="w-1/3" data-aos="fade-left">
             <img src="https://assets.yzjoycare.com/img/6.webp" alt="promo3" />
           </div>
         </div>
@@ -711,8 +711,11 @@
 </template>
 
 <script>
+import aosMixin from "~/mixins/aos";
+
 export default {
   name: "IndexPage",
+  mixins: [aosMixin],
   data() {
     return {
       choose_language: false,
