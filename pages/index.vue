@@ -2,9 +2,9 @@
   <div>
     <!-- #topbar -->
     <div class="bg-slate-900" id="top-bar">
-      <div class="container mx-auto relative">
+      <div class="container relative mx-auto">
         <div
-          class="flex justify-end px-2 text-sm md:justify-between items-center"
+          class="flex items-center justify-end px-2 text-sm md:justify-between"
           id="top-bar-text"
         >
           <div class="hidden md:flex">
@@ -60,8 +60,8 @@
           </div>
         </div>
         <div class="absolute right-2" v-if="choose_language">
-          <div class="overflow-hidden z-10">
-            <div class="relative grid gap-4 bg-slate-800 p-4">
+          <div class="z-10 overflow-hidden">
+            <div class="relative grid gap-4 p-4 bg-slate-800">
               <a href="#" class="text-white">简体中文</a>
               <a href="#" class="text-white">English</a>
             </div>
@@ -71,46 +71,46 @@
     </div>
     <!-- #header -->
     <header class="bg-fixed bg-center bg-no-repeat bg-cover" id="header">
-      <div class="container pt-6 mx-auto relative">
+      <div class="container relative pt-6 mx-auto">
         <div class="flex items-center justify-between px-2">
-          <div class="flex items-center flex-col md:flex-row">
+          <div class="flex flex-col items-center md:flex-row">
             <img
               src="https://assets.yzjoycare.com/img/logo-2-h70.webp"
               alt="joycare-main-logo"
             />
-            <h3 class="md:text-xl font-semibold text-white">
+            <h3 class="font-semibold text-white md:text-xl">
               扬州洁彩口腔护理用品有限公司
             </h3>
           </div>
           <nav class="">
             <ul class="hidden lg:flex">
               <li class="px-2">
-                <a href="" class="font-semibold text-white hover:underline"
+                <a href="/" class="font-semibold text-white hover:underline"
                   >首页</a
                 >
               </li>
               <li class="px-2">
-                <a href="" class="font-semibold text-white hover:underline"
+                <a href="#" class="font-semibold text-white hover:underline"
                   >公司产品</a
                 >
               </li>
               <li class="px-2">
-                <a href="" class="font-semibold text-white hover:underline"
+                <a href="#" class="font-semibold text-white hover:underline"
                   >公司动态</a
                 >
               </li>
               <li class="px-2">
-                <a href="" class="font-semibold text-white hover:underline"
+                <a href="#about-us" class="font-semibold text-white hover:underline"
                   >关于我们</a
                 >
               </li>
               <li class="px-2">
-                <a href="" class="font-semibold text-white hover:underline"
+                <a href="#" class="font-semibold text-white hover:underline"
                   >售后服务</a
                 >
               </li>
               <li class="px-2">
-                <a href="" class="font-semibold text-white hover:underline"
+                <a href="#foot" class="font-semibold text-white hover:underline"
                   >联系我们</a
                 >
               </li>
@@ -120,7 +120,7 @@
             <button @click="showMenu" v-bind:class="{ hidden: show_menu }">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10 text-white"
+                class="w-10 h-10 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -135,15 +135,15 @@
             </button>
           </div>
         </div>
-        <div class="absolute right-0 top-0" v-if="show_menu">
+        <div class="absolute top-0 right-0" v-if="show_menu">
           <div
-            class="flex flex-col z-10 w-32 h-screen bg-slate-800 p-4 opacity-90"
+            class="z-10 flex flex-col w-32 h-screen p-4 bg-slate-800 opacity-90"
           >
             <div class="mb-6">
               <button @click="showMenu" class="float-right">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10 text-white"
+                  class="w-10 h-10 text-white"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -156,30 +156,30 @@
               </button>
             </div>
             <ul>
-              <li class="mb-4"><a href="" class="text-white">首页</a></li>
-              <li class="mb-4"><a href="" class="text-white">公司产品</a></li>
-              <li class="mb-4"><a href="" class="text-white">公司动态</a></li>
-              <li class="mb-4"><a href="" class="text-white">关于我们</a></li>
-              <li class="mb-4"><a href="" class="text-white">售后服务</a></li>
-              <li class="mb-4"><a href="" class="text-white">联系我们</a></li>
+              <li class="mb-4"><a href="/" class="text-white">首页</a></li>
+              <li class="mb-4"><a href="#" class="text-white">公司产品</a></li>
+              <li class="mb-4"><a href="#" class="text-white">公司动态</a></li>
+              <li class="mb-4"><a href="#about-us" class="text-white">关于我们</a></li>
+              <li class="mb-4"><a href="#" class="text-white">售后服务</a></li>
+              <li class="mb-4"><a href="#foot" class="text-white">联系我们</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="flex flex-col items-center" id="header-promo">
-        <h1 class="mb-12 text-2xl md:text-5xl text-white">
+        <h1 class="mb-12 text-2xl text-white md:text-5xl">
           健康从口腔开始，从洁彩结束
         </h1>
         <div class="block max-w-xs">
           <button
             class="px-4 py-2 mr-8 font-medium text-white bg-blue-500 border-2 border-blue-500 rounded hover:bg-blue-400 hover:border-blue-400"
           >
-            了解我们
+            <a href="#about-us">了解我们</a>
           </button>
           <button
             class="px-4 py-2 font-medium text-white border-2 border-white rounded hover:bg-blue-400 hover:border-blue-400"
           >
-            联系我们
+            <a href="#foot">联系我们</a>
           </button>
         </div>
       </div>
@@ -197,12 +197,12 @@
           <div></div>
           <div class="flex">
             <div
-              class="hidden lg:block md:w-2/3 mt-8 mr-2 bg-center bg-no-repeat bg-cover border-0 border-none bg-clip-border rounded-3xl"
+              class="hidden mt-8 mr-2 bg-center bg-no-repeat bg-cover border-0 border-none lg:block md:w-2/3 bg-clip-border rounded-3xl"
               id="company-product-main"
             ></div>
 
             <div class="">
-              <div class="grid grid-cols-3 gap-2">
+              <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
                 <div class="flex flex-col items-center p-2">
                   <div class="p-6">
                     <img
@@ -269,8 +269,6 @@
                     更多产品
                   </button>
                 </div>
-              </div>
-              <div class="grid grid-cols-3 gap-2">
                 <div class="flex flex-col items-center p-2">
                   <div class="p-6">
                     <img
@@ -338,6 +336,7 @@
                   </button>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
@@ -345,13 +344,13 @@
 
       <!-- #promo1 -->
       <div class="container flex flex-col items-center px-2 mx-auto">
-        <h4 class="mb-4 font-semibold text-slate-900 text-xs md:text-base">
+        <h4 class="mb-4 text-xs font-semibold text-slate-900 md:text-base">
           YANGZHOU JOYCARE DENTAL PRODUCTS CO., LTD
         </h4>
-        <h3 class="mb-4 text-xl md:text-3xl tracking-widest text-slate-900">
+        <h3 class="mb-4 text-xl tracking-widest md:text-3xl text-slate-900">
           口腔由洁彩护航，健康与快乐同行
         </h3>
-        <h4 class="mb-4 text-slate-500 text-xs md:text-base">
+        <h4 class="mb-4 text-xs text-slate-500 md:text-base">
           Oral escort by JOYCARE, health and happiness together
         </h4>
         <button
@@ -370,18 +369,18 @@
       <!-- #promo2 -->
       <div class="bg-slate-100">
         <div
-          class="container flex flex-col md:flex-row items-center justify-center px-2 py-24 mx-auto"
+          class="container flex flex-col items-center justify-center px-2 py-24 mx-auto md:flex-row"
         >
-          <div class="md:w-1/3 md:mr-10 mb-6 md:mb-0" data-aos="fade-right">
+          <div class="mb-6 md:w-1/3 md:mr-10 md:mb-0" data-aos="fade-right">
             <img src="https://assets.yzjoycare.com/img/7.webp" alt="promo2" />
           </div>
           <div class="flex flex-col items-center md:items-start">
             <h3
-              class="mb-4 text-xl md:text-2xl lg:text-3xl tracking-widest text-slate-900"
+              class="mb-4 text-xl tracking-widest md:text-2xl lg:text-3xl text-slate-900"
             >
               健康从口腔开始，选择到洁彩结束
             </h3>
-            <h4 class="mb-4 text-slate-500 text-xs md:text-base">
+            <h4 class="mb-4 text-xs text-slate-500 md:text-base">
               Health begins with oral cavity and ends with choice of JOYCARE
             </h4>
             <button
@@ -396,13 +395,13 @@
       <!-- #promo3 -->
       <div class="">
         <div
-          class="container flex flex-col md:flex-row items-center justify-center px-2 py-24 mx-auto"
+          class="container flex flex-col items-center justify-center px-2 py-24 mx-auto md:flex-row"
         >
           <div
-            class="md:mr-10 mb-6 md:mb-0 flex flex-col items-center md:items-start"
+            class="flex flex-col items-center mb-6 md:mr-10 md:mb-0 md:items-start"
           >
             <h3
-              class="mb-4 text-xl md:text-2xl lg:text-3xl tracking-widest text-slate-900"
+              class="mb-4 text-xl tracking-widest md:text-2xl lg:text-3xl text-slate-900"
             >
               口腔由洁彩护航，健康与快乐同行
             </h3>
@@ -444,12 +443,12 @@
       </div>
 
       <!-- #about-us -->
-      <div class="mb-14">
+      <div class="mb-14" id="about-us">
         <div class="container flex flex-col items-center px-2 mx-auto">
           <h2 class="text-3xl tracking-widest text-slate-900">关于我们</h2>
           <h4 class="mb-14 text-slate-400">About Our Company</h4>
           <div class="flex flex-col lg:flex-row">
-            <div class="lg:w-1/2 mb-7 lg:mb-0 md:px-10 px-4">
+            <div class="px-4 lg:w-1/2 mb-7 lg:mb-0 md:px-10">
               <p class="mb-2 text-slate-900">
                 Yangzhou Joycare Dental Products Co.,
                 Ltd位于美丽的江苏扬州，一个以生产各种牙刷而闻名的城市。
@@ -489,14 +488,14 @@
         data-aos="fade-up"
       >
         <div class="container flex justify-between px-2 mx-auto">
-          <div class="text-xl md:text-4xl text-white">
+          <div class="text-xl text-white md:text-4xl">
             <span class="font-semibold">Join us.</span>It will only take a
             minute.
           </div>
           <button
-            class="px-2 md:px-4 py-2 font-medium text-white border-2 border-white rounded hover:bg-blue-400 hover:border-blue-400"
+            class="px-2 py-2 font-medium text-white border-2 border-white rounded md:px-4 hover:bg-blue-400 hover:border-blue-400"
           >
-            联系我们
+            <a href="#foot">联系我们</a>
           </button>
         </div>
       </div>
@@ -505,72 +504,66 @@
       <div class="">
         <div class="container flex flex-col items-center mx-auto">
           <h2 class="text-3xl tracking-widest text-slate-900">企业动态</h2>
-          <h4 class="mb-14 text-slate-400">Company News</h4>
-          <div class="flex flex-col px-2 mb-14">
+          <h4 class="mb-10 text-slate-400">Company News</h4>
+          <div class="flex flex-col px-2 mb-2">
             <div
-              class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row"
+              class="flex flex-col pb-6 mb-6 border-b border-slate-100"
             >
-              <div class="flex-none">
-                <span class="text-xl font-semibold text-blue-500"
-                  >2022-06-23</span
+              <div class="flex flex-col mb-6 md:flex-row">
+                <div class="text-lg font-semibold text-blue-500 md:mr-6 lg:text-xl"
+                  >2022-06-23</div
                 >
+                <div class="">
+                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">测试文章：唐李白《赠汪伦》</a>
+                </div>
               </div>
-              <div class="flex-1 lg:px-24">
-                <a
-                  href=""
-                  class="text-xl font-semibold text-blue-500 hover:underline"
-                  >测试文章：唐李白《赠汪伦》</a
-                >
-                <p class="font-light text-slate-500">
+              <div class="flex flex-col md:flex-row">
+                <div class="mb-6 grow md:p-4 lg:p-6" data-aos="fade-right">
+                  <img src="~/assets/img/16.jpg" alt="article-placeholder" class="object-cover w-full"/>
+                </div>
+                <div class="font-light text-slate-500 md:w-1/2 lg:w-2/3 md:p-4 lg:p-6">
                   此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
-                </p>
-              </div>
-              <div class="flex-initial w-64" data-aos="fade-left">
-                <img src="~/assets/img/16.jpg" alt="article-placeholder" />
+                </div>
               </div>
             </div>
             <div
-              class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row"
+              class="flex flex-col pb-6 mb-6 border-b border-slate-100"
             >
-              <div class="flex-none">
-                <span class="text-xl font-semibold text-blue-500"
-                  >2022-06-23</span
+              <div class="flex flex-col mb-6 md:flex-row">
+                <div class="text-lg font-semibold text-blue-500 md:mr-6 lg:text-xl"
+                  >2022-06-23</div
                 >
+                <div class="">
+                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">测试文章：唐李白《赠汪伦》</a>
+                </div>
               </div>
-              <div class="flex-1 lg:px-24">
-                <a
-                  href=""
-                  class="text-xl font-semibold text-blue-500 hover:underline"
-                  >测试文章：唐李白《赠汪伦》</a
-                >
-                <p class="font-light text-slate-500">
+              <div class="flex flex-col md:flex-row">
+                <div class="mb-6 grow md:p-4 lg:p-6" data-aos="fade-right">
+                  <img src="~/assets/img/16.jpg" alt="article-placeholder" class="object-cover w-full"/>
+                </div>
+                <div class="font-light text-slate-500 md:w-1/2 lg:w-2/3 md:p-4 lg:p-6">
                   此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
-                </p>
-              </div>
-              <div class="flex-initial w-64" data-aos="fade-left">
-                <img src="~/assets/img/16.jpg" alt="article-placeholder" />
+                </div>
               </div>
             </div>
             <div
-              class="flex flex-col pb-6 mb-6 border-b border-slate-100 lg:flex-row"
+              class="flex flex-col pb-6 mb-6 border-b border-slate-100"
             >
-              <div class="flex-none">
-                <span class="text-xl font-semibold text-blue-500"
-                  >2022-06-23</span
+              <div class="flex flex-col mb-6 md:flex-row">
+                <div class="text-lg font-semibold text-blue-500 md:mr-6 lg:text-xl"
+                  >2022-06-23</div
                 >
+                <div class="">
+                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">测试文章：唐李白《赠汪伦》</a>
+                </div>
               </div>
-              <div class="flex-1 lg:px-24">
-                <a
-                  href=""
-                  class="text-xl font-semibold text-blue-500 hover:underline"
-                  >测试文章：唐李白《赠汪伦》</a
-                >
-                <p class="font-light text-slate-500">
+              <div class="flex flex-col md:flex-row">
+                <div class="mb-6 grow md:p-4 lg:p-6" data-aos="fade-right">
+                  <img src="~/assets/img/16.jpg" alt="article-placeholder" class="object-cover w-full"/>
+                </div>
+                <div class="font-light text-slate-500 md:w-1/2 lg:w-2/3 md:p-4 lg:p-6">
                   此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
-                </p>
-              </div>
-              <div class="flex-initial w-64" data-aos="fade-left">
-                <img src="~/assets/img/16.jpg" alt="article-placeholder" />
+                </div>
               </div>
             </div>
           </div>
@@ -680,7 +673,7 @@
               >
             </div>
           </div>
-          <div class="w-4/5 md:w-3/4 p-4 md:p-8 bg-white rounded lg:w-1/3">
+          <div class="w-4/5 p-4 bg-white rounded md:w-3/4 md:p-8 lg:w-1/3">
             <div class="mb-4">
               <label
                 for="customer-name"
