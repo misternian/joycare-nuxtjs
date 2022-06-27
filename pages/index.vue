@@ -514,7 +514,7 @@
                   >2022-06-23</div
                 >
                 <div class="">
-                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">测试文章：唐李白《赠汪伦》</a>
+                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">扬州洁彩品牌传播案例获评中国洗护品牌影响力“金口腔奖”</a>
                 </div>
               </div>
               <div class="flex flex-col md:flex-row">
@@ -522,7 +522,10 @@
                   <img src="~/assets/img/16.jpg" alt="article-placeholder" class="object-cover w-full"/>
                 </div>
                 <div class="font-light text-slate-500 md:w-1/2 lg:w-2/3 md:p-4 lg:p-6">
-                  此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
+                  <p class="mb-2">
+                  近日，由《中国口腔行业报》主办的“2022 金口腔·第六届中国洗护品牌影响力传播案例征集活动”结果揭晓，“二十而砺 初心不移”扬州洁彩境内创业20周年传播案例获评“金口腔·中国洗护品牌创新典范”，“专业致胜·十日谈”系列宣传片获评“金口腔·中国洗护品牌影响力宣传片”。
+                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -534,7 +537,7 @@
                   >2022-06-23</div
                 >
                 <div class="">
-                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">测试文章：唐李白《赠汪伦》</a>
+                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">扬州洁彩品牌传播案例获评中国洗护品牌影响力“金口腔奖”</a>
                 </div>
               </div>
               <div class="flex flex-col md:flex-row">
@@ -542,7 +545,12 @@
                   <img src="~/assets/img/16.jpg" alt="article-placeholder" class="object-cover w-full"/>
                 </div>
                 <div class="font-light text-slate-500 md:w-1/2 lg:w-2/3 md:p-4 lg:p-6">
-                  此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
+                  <p class="mb-2">
+
+                  
+                  近日，由《中国口腔行业报》主办的“2022 金口腔·第六届中国洗护品牌影响力传播案例征集活动”结果揭晓，“二十而砺 初心不移”扬州洁彩境内创业20周年传播案例获评“金口腔·中国洗护品牌创新典范”，“专业致胜·十日谈”系列宣传片获评“金口腔·中国洗护品牌影响力宣传片”。
+                </p>
+                
                 </div>
               </div>
             </div>
@@ -554,7 +562,7 @@
                   >2022-06-23</div
                 >
                 <div class="">
-                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">测试文章：唐李白《赠汪伦》</a>
+                  <a href="" class="text-lg font-semibold text-blue-500 hover:underline lg:text-xl">扬州洁彩品牌传播案例获评中国洗护品牌影响力“金口腔奖”</a>
                 </div>
               </div>
               <div class="flex flex-col md:flex-row">
@@ -562,7 +570,10 @@
                   <img src="~/assets/img/16.jpg" alt="article-placeholder" class="object-cover w-full"/>
                 </div>
                 <div class="font-light text-slate-500 md:w-1/2 lg:w-2/3 md:p-4 lg:p-6">
-                  此诗作于唐玄宗天宝十三载（754年）或天宝十四载（755年），当时李白自秋浦往泾县（今属安徽）漫游。宋本《李太白文集》题下注：“白游泾县桃花潭，村人汪伦常酝美酒以待白。伦之裔孙至今宝其诗。”
+                  <p class="mb-2">
+                  近日，由《中国口腔行业报》主办的“2022 金口腔·第六届中国洗护品牌影响力传播案例征集活动”结果揭晓，“二十而砺 初心不移”扬州洁彩境内创业20周年传播案例获评“金口腔·中国洗护品牌创新典范”，“专业致胜·十日谈”系列宣传片获评“金口腔·中国洗护品牌影响力宣传片”。
+                </p>
+                
                 </div>
               </div>
             </div>
